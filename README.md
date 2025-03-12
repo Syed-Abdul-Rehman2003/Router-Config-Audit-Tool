@@ -26,8 +26,3 @@ The tool generates an **audit report** with **remediation recommendations** and 
 
 ---
 
-## Installation & Setup  
-### **1. Clone Repository**  
-```bash
-git clone https://github.com/YOUR_USERNAME/Router-Config-Audit-Tool.git
-cd Router-Config-Audit-Tool
