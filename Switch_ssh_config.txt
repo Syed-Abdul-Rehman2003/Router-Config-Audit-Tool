@@ -1,0 +1,20 @@
+enable
+configure terminal
+hostname S1
+banner motd "This is a Cisco Switch - Authorized Access Only!"
+interface vlan 1
+ip address 192.168.1.2 255.255.255.0
+no shutdown
+exit
+ip default-gateway 192.168.1.1
+username admin privilege 15 secret Cisco123
+enable secret Cisco123
+service password-encryption
+crypto key generate rsa
+1024
+ip ssh version 2
+line vty 0 4
+transport input ssh
+login local
+write memory
+exit
